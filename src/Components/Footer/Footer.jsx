@@ -33,7 +33,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="4" md="4" sm="12">
-            <div className="logo">
+            <div className="logo footer__logo">
               <h1>
                 <Link to="/home" className="d-flex align-items-center gap-2">
                   <i class="ri-car-line"></i>
@@ -56,7 +56,7 @@ const Footer = () => {
           <ListGroup>
             {
               quickLinks.map((item,index)=>(
-                <ListGroupItem key={index} className="p-0 mt-3">
+                <ListGroupItem key={index} className="p-0 mt-3 quick__link">
                   <Link to ={item.path}>{item.display}</Link>
 
                 </ListGroupItem>
@@ -68,7 +68,7 @@ const Footer = () => {
 
           <Col lg='3' md='4' sm='6'>
           <div className="mb-4">
-            <h5 className="footer__link-title">Head Office</h5>
+            <h5 className="footer__link-title mb-4">Head Office</h5>
             <p className="office__info">112/4, Nicholos Road, Colombo 10, Sri Lanka</p>
             <p className="office__info">Phone: 011-6597418</p>
             <p className="office__info">Email: biverse@gmail.com</p>
