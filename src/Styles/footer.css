@@ -58,5 +58,8 @@
     color:#fff;
 }
 .section__description{
-    color: #a3a3a3dc;
+    color: #e1e0e0;
+}
+.footer__bottom{
+    border-top: 1px solid #7c8a972f;
 }
