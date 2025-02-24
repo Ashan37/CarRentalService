@@ -7,4 +7,4 @@ const Helmet = (props) => {
     <div className='w-100'>{props.children}</div>
 };
 
-export default Helmet;
+export default Helmet

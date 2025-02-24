@@ -1,52 +1,59 @@
-import React from 'react'
-import Slider from 'react-slick'
-import {Container} from 'reactstrap'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import Slider from 'react-slick';
+import { Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import '../../Styles/heroslider.css';
 
 const HeroSlider = () => {
-  return <Slider className='hero__slider'>
-    <div className='slider__item slider__item-01 mt0'>
+  const settings = {
+    fade: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  return (
+    <Slider {...settings} className="hero__slider">
+      <div className="slider__item slider__item-01 mt-0">
         <Container>
-            <div className="slider__content">
-                <h4 className='text-light mb3'>For rent Rs 2800.00 Per Day</h4>
-                <h1>Reserve Now and Get 50% Off</h1> 
-
-                <button className='btn reserve__btn'>
-                    <Link to='/cars'>Reserve Now</Link>
-                </button>
-            </div>
+          <div className="slider__content">
+            <h4 className="text-light mb-3">For rent Rs 2800.00 Per Day</h4>
+            <h1>Reserve Now and Get 50% Off</h1>
+            <button className="btn reserve__btn mt-4">
+              <Link to="/cars">Reserve Now</Link>
+            </button>
+          </div>
         </Container>
-    </div>
+      </div>
 
-    <div className='slider__item slider__item-01 mt0'>
+      <div className="slider__item slider__item-02 mt-0">
         <Container>
-            <div className="slider__content">
-                <h4 className='text-light mb3'>For rent Rs 2800.00 Per Day</h4>
-                <h1>Reserve Now and Get 50% Off</h1> 
-                
-                <button className='btn reserve__btn'>
-                    <Link to='/cars'>Reserve Now</Link>
-                </button>
-            </div>
+          <div className="slider__content">
+            <h4 className="text-light mb-3">For rent Rs 2800.00 Per Day</h4>
+            <h1>Reserve Now and Get 50% Off</h1>
+            <button className="btn reserve__btn mt-4">
+              <Link to="/cars">Reserve Now</Link>
+            </button>
+          </div>
         </Container>
-    </div>
+      </div>
 
-    <div className='slider__item slider__item-01 mt0'>
+      <div className="slider__item slider__item-03 mt-0">
         <Container>
-            <div className="slider__content">
-                <h4 className='text-light mb3'>For rent Rs 2800.00 Per Day</h4>
-                <h1>Reserve Now and Get 50% Off</h1> 
-                
-                <button className='btn reserve__btn'>
-                    <Link to='/cars'>Reserve Now</Link>
-                </button>
-            </div>
+          <div className="slider__content">
+            <h4 className="text-light mb-3">For rent Rs 2800.00 Per Day</h4>
+            <h1>Reserve Now and Get 50% Off</h1>
+            <button className="btn reserve__btn mt-4">
+              <Link to="/cars">Reserve Now</Link>
+            </button>
+          </div>
         </Container>
-    </div>
-    
-  </Slider>
-    
-  
-}
+      </div>
+    </Slider>
+  );
+};
 
-export default HeroSlider
+export default HeroSlider;

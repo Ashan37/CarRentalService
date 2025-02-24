@@ -19,6 +19,7 @@ const Routerr = () => {
         <Route path='blogs' element={<Blog/>}/>
         <Route path='blogs/:slug' element={<BlogDetails/>}/>
         
+        
     </Routes>
   )
 }
