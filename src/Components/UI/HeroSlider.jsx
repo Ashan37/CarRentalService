@@ -1,8 +1,8 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { Container } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import '../../Styles/heroslider.css';
+import React from "react";
+import Slider from "react-slick";
+import { Container } from "reactstrap";
+import { Link } from "react-router-dom";
+import "../../Styles/heroslider.css";
 
 const HeroSlider = () => {
   const settings = {
@@ -13,7 +13,7 @@ const HeroSlider = () => {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover:false,
+    pauseOnHover: false,
   };
 
   return (

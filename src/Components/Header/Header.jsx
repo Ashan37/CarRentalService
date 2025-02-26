@@ -123,7 +123,6 @@ const Header = () => {
             <span className="mobile__menu">
               <i class="ri-menu-line"></i>
             </span>
-
             <div className="navigation">
               <div className="menu">
                 {navLink.map((item, index) => (
