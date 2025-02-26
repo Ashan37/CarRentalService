@@ -7,12 +7,13 @@ import '../../Styles/heroslider.css';
 const HeroSlider = () => {
   const settings = {
     fade: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
+    speed: 500,
+    autoplaySpeed: 2000,
     infinite: true,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnHover:false,
   };
 
   return (
